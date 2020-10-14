@@ -1,5 +1,5 @@
 import React from "react";
-import { css } from "@emotion/native";
+import styled, { css } from "@emotion/native";
 import { Text } from "react-native";
 import {
   useFonts,
@@ -37,6 +37,10 @@ const secondaryBold = css`
   font-size: 33px;
 `;
 
+const BaseText = styled.Text`
+  marginBottom: ${props => props.theme.marginBottom}
+`;
+
 export const MainText = ({ style, children }) => {
   let [fontsLoaded] = useFonts({
     Quattrocento_400Regular,
@@ -58,13 +62,13 @@ export const MainText = ({ style, children }) => {
   }
 
   return (
-    <Text
+    <BaseText
       style={css`
         ${primary} ${style}
       `}
     >
       {children}
-    </Text>
+    </BaseText>
   );
 };
 
@@ -73,6 +77,7 @@ export const H1 = (props) => {
     <MainText
       style={css`
         ${secondaryBold};
+        ${props.style};
       `}
     >
       {props.children}
@@ -85,6 +90,7 @@ export const H2 = (props) => {
     <MainText
       style={css`
         ${secondary};
+        ${props.style};
       `}
     >
       {props.children}
@@ -98,6 +104,7 @@ export const H3 = (props) => {
       style={css`
         ${secondary};
         font-size: 20px;
+        ${props.style};
       `}
     >
       {props.children}
@@ -110,6 +117,7 @@ export const Caption = (props) => {
     <MainText
       style={css`
         ${primaryItalic};
+        ${props.style};
       `}
     >
       {props.children}

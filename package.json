@@ -14,6 +14,7 @@
     "@emotion/native": "^10.0.27",
     "@expo-google-fonts/fanwood-text": "^0.1.0",
     "@expo-google-fonts/quattrocento": "^0.1.0",
+    "emotion-theming": "^10.0.27",
     "expo": "~39.0.2",
     "expo-font": "~8.3.0",
     "expo-status-bar": "~1.0.2",
