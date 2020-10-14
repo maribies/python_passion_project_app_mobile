@@ -1,7 +1,7 @@
 import React from "react";
 import { H1, H3 } from "./Components/Text";
 import { Layout } from "./Components/Layout.native";
-import { ThemeProvider, withTheme } from 'emotion-theming'
+import { ThemeProvider } from 'emotion-theming'
 
 const theme = {
   marginTop: '20px',
