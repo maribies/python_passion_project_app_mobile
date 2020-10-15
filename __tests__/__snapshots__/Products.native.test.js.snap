@@ -1,0 +1,282 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with data 1`] = `
+<RCTScrollView
+  showsVerticalScrollIndicator={false}
+  style={Object {}}
+>
+  <View>
+    <View
+      style={Object {}}
+    >
+      <Image
+        source={
+          Object {
+            "uri": "https://via.placeholder.com/150",
+          }
+        }
+        style={
+          Object {
+            "height": 223,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "fontFamily": "Helvetica",
+            "fontSize": 16,
+            "fontWeight": "normal",
+            "lineHeight": 21,
+          }
+        }
+      >
+        Chanel
+      </Text>
+      <Text
+        style={
+          Object {
+            "fontFamily": "Helvetica",
+            "fontSize": 16,
+            "fontWeight": "normal",
+            "lineHeight": 21,
+          }
+        }
+      >
+        Flap Bag
+      </Text>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-start",
+              "maxWidth": 64,
+              "paddingRight": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "Helvetica",
+                "fontSize": 16,
+                "fontWeight": "normal",
+                "lineHeight": 21,
+              }
+            }
+          >
+            black
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "Helvetica",
+                "fontSize": 16,
+                "fontWeight": "normal",
+                "lineHeight": 21,
+              }
+            }
+          >
+            3
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-start",
+              "maxWidth": 64,
+              "paddingRight": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "Helvetica",
+                "fontSize": 16,
+                "fontWeight": "normal",
+                "lineHeight": 21,
+              }
+            }
+          >
+            white
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "Helvetica",
+                "fontSize": 16,
+                "fontWeight": "normal",
+                "lineHeight": 21,
+              }
+            }
+          >
+            5
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-start",
+              "maxWidth": 64,
+              "paddingRight": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "Helvetica",
+                "fontSize": 16,
+                "fontWeight": "normal",
+                "lineHeight": 21,
+              }
+            }
+          >
+            burgandy
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "Helvetica",
+                "fontSize": 16,
+                "fontWeight": "normal",
+                "lineHeight": 21,
+              }
+            }
+          >
+            4
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-start",
+              "maxWidth": 64,
+              "paddingRight": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "Helvetica",
+                "fontSize": 16,
+                "fontWeight": "normal",
+                "lineHeight": 21,
+              }
+            }
+          >
+            black & white
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "Helvetica",
+                "fontSize": 16,
+                "fontWeight": "normal",
+                "lineHeight": 21,
+              }
+            }
+          >
+            0
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-start",
+              "maxWidth": 64,
+              "paddingRight": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "Helvetica",
+                "fontSize": 16,
+                "fontWeight": "normal",
+                "lineHeight": 21,
+              }
+            }
+          >
+            black, white, & gray
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "Helvetica",
+                "fontSize": 16,
+                "fontWeight": "normal",
+                "lineHeight": 21,
+              }
+            }
+          >
+            4
+          </Text>
+        </View>
+      </View>
+      <Text
+        style={
+          Object {
+            "fontFamily": "Helvetica",
+            "fontSize": 16,
+            "fontWeight": "normal",
+            "lineHeight": 21,
+          }
+        }
+      >
+        $5,000
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`renders correctly with no data 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "Helvetica",
+      "fontSize": 16,
+      "fontWeight": "normal",
+      "lineHeight": 21,
+    }
+  }
+>
+  Something went wrong. No products are found yet!
+</Text>
+`;
+
+exports[`renders correctly with undefined data 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "Helvetica",
+      "fontSize": 16,
+      "fontWeight": "normal",
+      "lineHeight": 21,
+    }
+  }
+>
+  Something went wrong. No products are found yet!
+</Text>
+`;

@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with data 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "Helvetica",
+      "fontSize": 16,
+      "fontWeight": "normal",
+      "lineHeight": 21,
+    }
+  }
+>
+  Opps! No Data!
+</Text>
+`;
+
+exports[`renders correctly with no data 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "Helvetica",
+      "fontSize": 16,
+      "fontWeight": "normal",
+      "lineHeight": 21,
+    }
+  }
+>
+  Opps! No Data!
+</Text>
+`;
+
+exports[`renders correctly with undefined data 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "Helvetica",
+      "fontSize": 16,
+      "fontWeight": "normal",
+      "lineHeight": 21,
+    }
+  }
+>
+  Opps! No Data!
+</Text>
+`;

@@ -1,12 +1,12 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { create, act } from "react-test-renderer";
 import { H1, H2, H3, MainText, Caption } from "../Components/Text.native";
 import { useFonts } from "@expo-google-fonts/quattrocento";
 
 jest.mock("@expo-google-fonts/quattrocento");
 
 test("correctly renders the text elements", () => {
-  useFonts.mockReturnValue([false]);
+  act(() => { useFonts.mockReturnValue([false]); })
 
   let text = create(<MainText>Text of the main persuasion.</MainText>);
   let title = create(<H1>Title!</H1>);
@@ -22,7 +22,7 @@ test("correctly renders the text elements", () => {
   expect(heading.toJSON()).toMatchSnapshot();
   expect(caption.toJSON()).toMatchSnapshot();
 
-  useFonts.mockReturnValue([true]);
+  act(() => { useFonts.mockReturnValue([true]); });
 
   text.update(<MainText>Text of the main persuasion.</MainText>);
   title.update(<H1>Title!</H1>);
@@ -31,6 +31,7 @@ test("correctly renders the text elements", () => {
     <H3>Not quite a subtitle, but still more important than the rest.</H3>
   );
   caption.update(<Caption>I'm a Caption!</Caption>);
+  
 
   expect(title.toJSON()).toMatchSnapshot();
   expect(subtitle.toJSON()).toMatchSnapshot();
