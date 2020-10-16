@@ -16,5 +16,22 @@
     "images": ["https://via.placeholder.com/150", "https://via.placeholder.com/150"],
     "stock": [{"color": "black", "quantity": 3}, {"color": "white", "quantity": 5}, {"color": "burgandy", "quantity": 4}, {"color": "black & white", "quantity": 0}, {"color": "black, white, & gray", "quantity": 4}],
     "keywords": ["Flap Bag", "Chanel", "Leather", "metal", "TestSKU-1", "SS2020", "Seasonal"]
+    }, {
+    "name": "Flap Bag 2",
+    "designer": "Chanel",
+    "product_price": "$5,000",
+    "site_url": "https.chanel.com/flap-bag",
+    "condition": "New",
+    "material": "Leather, metal",
+    "size": "OS",
+    "dimensions": "10 x 12 in",
+    "sku": "TestSKU-2",
+    "season": "SS 2020",
+    "collection": "Seasonal",
+    "category": "bags",
+    "brand": "Chanel",
+    "images": ["https://via.placeholder.com/150", "https://via.placeholder.com/150"],
+    "stock": [{"color": "black", "quantity": 3}, {"color": "white", "quantity": 5}, {"color": "burgandy", "quantity": 4}, {"color": "black & white", "quantity": 0}, {"color": "black, white, & gray", "quantity": 4}],
+    "keywords": ["Flap Bag", "Chanel", "Leather", "metal", "TestSKU-1", "SS2020", "Seasonal"]
     }]
 }

@@ -7,13 +7,14 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "test": "jest",
-    "lint": "eslint"
+    "lint": "eslint .",
+    "fix": "eslint . --fix"
   },
   "dependencies": {
     "@emotion/core": "10.0.35",
-    "@emotion/native": "^10.0.27",
-    "@expo-google-fonts/fanwood-text": "^0.1.0",
-    "@expo-google-fonts/quattrocento": "^0.1.0",
+    "@emotion/native": "10.0.27",
+    "@expo-google-fonts/fanwood-text": "0.1.0",
+    "@expo-google-fonts/quattrocento": "0.1.0",
     "emotion-theming": "^10.0.27",
     "expo": "~39.0.2",
     "expo-font": "~8.3.0",
@@ -25,13 +26,15 @@
   },
   "devDependencies": {
     "@babel/core": "7.9.0",
-    "@testing-library/react-hooks": "^3.4.2",
+    "@babel/eslint-parser": "7.12.1",
+    "@testing-library/react-hooks": "3.4.2",
     "eslint": "7.11.0",
-    "eslint-config-prettier": "^6.12.0",
-    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-config-prettier": "6.12.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.21.4",
     "jest": "26.4.2",
     "prettier": "2.1.2",
-    "react-test-renderer": "^16.13.1"
+    "react-test-renderer": "16.13.1"
   },
   "private": true,
   "husky": {

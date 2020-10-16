@@ -41,7 +41,7 @@ exports[`correctly renders the text elements 3`] = `
     }
   }
 >
-  I'm a subtitle.
+  I am a subtitle.
 </Text>
 `;
 
@@ -71,7 +71,7 @@ exports[`correctly renders the text elements 5`] = `
     }
   }
 >
-  I'm a Caption!
+  I am a Caption!
 </Text>
 `;
 
@@ -97,7 +97,7 @@ exports[`correctly renders the text elements 7`] = `
     }
   }
 >
-  I'm a subtitle.
+  I am a subtitle.
 </Text>
 `;
 
@@ -135,6 +135,6 @@ exports[`correctly renders the text elements 10`] = `
     }
   }
 >
-  I'm a Caption!
+  I am a Caption!
 </Text>
 `;

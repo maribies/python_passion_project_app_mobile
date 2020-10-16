@@ -4,7 +4,7 @@ import { H1, MainText } from "../Components/Text.native";
 
 // TODO: on click go to site_url.
 const ProductContainer = styled.View`
-  margin-bottom: ${props => props.theme.marginBottom};
+  margin-bottom: ${(props) => props.theme.marginBottom};
 `;
 
 // TODO: maybe this could be a horizontal scroll instead of a wrap?
@@ -23,11 +23,11 @@ const StockContainer = styled.View`
 
 const ProductImage = styled.Image`
   height: 223px;
-  margin-bottom:  ${props => props.theme.marginBottom};
-`
+  margin-bottom: ${(props) => props.theme.marginBottom};
+`;
 
-export const getStockDetails = stock => {
-  return stock.map(data => {
+export const getStockDetails = (stock) => {
+  return stock.map((data) => {
     const { color, quantity } = data;
 
     return (
@@ -35,30 +35,30 @@ export const getStockDetails = stock => {
         <MainText style={{ marginBottom: 0 }}>{color}</MainText>
         <MainText style={{ justifyContent: "flex-end" }}>{quantity}</MainText>
       </StockContainer>
-    )
-  })
-}
+    );
+  });
+};
 
 // TODO: add a carousel to swipe image and product details.
 // TODO: also replace catch below with custom error component.
-export const Product = ({product = null}) => {
+export const Product = ({ product = null }) => {
   if (!product) {
-    return (<H1>Opps! No Data!</H1>);
+    return <H1>Opps! No Data!</H1>;
   }
 
   const { designer, name, product_price, images, stock } = product;
 
   return (
     <ProductContainer>
-      <ProductImage source={{ uri:images[0] }} />
+      <ProductImage source={{ uri: images[0] }} />
 
       <H1 style={{ fontSize: 20 }}>{designer}</H1>
 
       <MainText style={{ fontSize: 20 }}>{name}</MainText>
 
       <StockWrapper>{getStockDetails(stock)}</StockWrapper>
-      
+
       <MainText>{product_price}</MainText>
     </ProductContainer>
-  )
-}
+  );
+};

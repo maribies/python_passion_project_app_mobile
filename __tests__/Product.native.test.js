@@ -5,38 +5,43 @@ import products from "../Fixtures/products.json";
 
 const product = products[0];
 
-test('renders correctly with no data', () => {
+test("renders correctly with no data", () => {
   const tree = create(<Product />).toJSON();
 
   expect(tree).toMatchSnapshot();
-  expect.objectContaining({Text:"Opps! No Data!"})
+  expect.objectContaining({ Text: "Opps! No Data!" });
 });
 
-test('renders correctly with undefined data', () => {
-  const tree = create(<Product product={undefined}/>).toJSON();
+test("renders correctly with undefined data", () => {
+  const tree = create(<Product product={undefined} />).toJSON();
 
   expect(tree).toMatchSnapshot();
-  expect.objectContaining({Text:"Opps! No Data!"})
+  expect.objectContaining({ Text: "Opps! No Data!" });
 });
 
-test('renders correctly with data', () => {
+test("renders correctly with data", () => {
   const tree = create(<Product product={product} />).toJSON();
 
   expect(tree).toMatchSnapshot();
-  expect.objectContaining({Text:"Chanel"})
+  expect.objectContaining({ Text: "Chanel" });
 });
 
 // TODO: Should be testing this method directly but keep getting mock function errors.
-test('getStockDetails mock returns details', () => {
-  const stock = [{"color":"black", "quantity": 3}, {"color":"white", "quantity": 4}];
+test("getStockDetails mock returns details", () => {
+  const stock = [
+    { color: "black", quantity: 3 },
+    { color: "white", quantity: 4 },
+  ];
 
-  const testGetStockDetails = jest.fn(stock => stock.map(data => {
-    const { color, quantity } = data;
+  const testGetStockDetails = jest.fn((stock) =>
+    stock.map((data) => {
+      const { color, quantity } = data;
 
-    return `${color} ${quantity}`
-  }));
+      return `${color} ${quantity}`;
+    })
+  );
 
   testGetStockDetails(stock);
 
-  expect(testGetStockDetails).toHaveReturnedWith(["black 3", "white 4"])
+  expect(testGetStockDetails).toHaveReturnedWith(["black 3", "white 4"]);
 });

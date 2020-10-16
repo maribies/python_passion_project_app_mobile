@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled, { css } from "@emotion/native";
 import { Text } from "react-native";
 import {
@@ -38,7 +39,7 @@ const secondaryBold = css`
 `;
 
 const BaseText = styled.Text`
-  marginBottom: ${props => props.theme.marginBottom}
+  marginbottom: ${(props) => props.theme.marginBottom};
 `;
 
 export const MainText = ({ style, children }) => {
@@ -123,4 +124,34 @@ export const Caption = (props) => {
       {props.children}
     </MainText>
   );
+};
+
+MainText.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+    .isRequired,
+  style: PropTypes.object,
+};
+
+H1.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+    .isRequired,
+  style: PropTypes.object,
+};
+
+H2.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+    .isRequired,
+  style: PropTypes.object,
+};
+
+H3.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+    .isRequired,
+  style: PropTypes.object,
+};
+
+Caption.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+    .isRequired,
+  style: PropTypes.object,
 };
