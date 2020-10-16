@@ -11,7 +11,7 @@ exports[`renders correctly with data 1`] = `
     }
   }
 >
-  Opps! No Data!
+  Oops! No Data!
 </Text>
 `;
 
@@ -26,7 +26,7 @@ exports[`renders correctly with no data 1`] = `
     }
   }
 >
-  Opps! No Data!
+  Oops! No Data!
 </Text>
 `;
 
@@ -41,6 +41,6 @@ exports[`renders correctly with undefined data 1`] = `
     }
   }
 >
-  Opps! No Data!
+  Oops! No Data!
 </Text>
 `;

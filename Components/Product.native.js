@@ -43,7 +43,7 @@ export const getStockDetails = (stock) => {
 // TODO: also replace catch below with custom error component.
 export const Product = ({ product = null }) => {
   if (!product) {
-    return <H1>Opps! No Data!</H1>;
+    return <H1>Oops! No Data!</H1>;
   }
 
   const { designer, name, product_price, images, stock } = product;
