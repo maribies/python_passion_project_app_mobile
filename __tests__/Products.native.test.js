@@ -3,8 +3,6 @@ import { create } from "react-test-renderer";
 import { Products } from "../Components/Products.native";
 import products from "../Fixtures/products.json";
 
-jest.useFakeTimers();
-
 test("renders correctly with no data", () => {
   const tree = create(<Products />).toJSON();
 

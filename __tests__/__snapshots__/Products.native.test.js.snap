@@ -32,6 +32,16 @@ exports[`renders correctly with data 1`] = `
       >
         Chanel
       </Text>
+      <Text
+        style={
+          Object {
+            "fontFamily": "FanwoodText_400Regular",
+            "fontSize": 20,
+          }
+        }
+      >
+        Flap Bag
+      </Text>
       <View
         style={
           Object {
@@ -50,7 +60,28 @@ exports[`renders correctly with data 1`] = `
               "paddingRight": 8,
             }
           }
-        />
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "marginBottom": 0,
+              }
+            }
+          >
+            black
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            3
+          </Text>
+        </View>
         <View
           style={
             Object {
@@ -61,7 +92,28 @@ exports[`renders correctly with data 1`] = `
               "paddingRight": 8,
             }
           }
-        />
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "marginBottom": 0,
+              }
+            }
+          >
+            white
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            5
+          </Text>
+        </View>
         <View
           style={
             Object {
@@ -72,7 +124,28 @@ exports[`renders correctly with data 1`] = `
               "paddingRight": 8,
             }
           }
-        />
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "marginBottom": 0,
+              }
+            }
+          >
+            burgandy
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            4
+          </Text>
+        </View>
         <View
           style={
             Object {
@@ -83,7 +156,28 @@ exports[`renders correctly with data 1`] = `
               "paddingRight": 8,
             }
           }
-        />
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "marginBottom": 0,
+              }
+            }
+          >
+            black & white
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            0
+          </Text>
+        </View>
         <View
           style={
             Object {
@@ -94,8 +188,38 @@ exports[`renders correctly with data 1`] = `
               "paddingRight": 8,
             }
           }
-        />
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "marginBottom": 0,
+              }
+            }
+          >
+            black, white, & gray
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            4
+          </Text>
+        </View>
       </View>
+      <Text
+        style={
+          Object {
+            "fontFamily": "FanwoodText_400Regular",
+          }
+        }
+      >
+        $5,000
+      </Text>
     </View>
     <View
       style={Object {}}
@@ -123,6 +247,16 @@ exports[`renders correctly with data 1`] = `
       >
         Chanel
       </Text>
+      <Text
+        style={
+          Object {
+            "fontFamily": "FanwoodText_400Regular",
+            "fontSize": 20,
+          }
+        }
+      >
+        Flap Bag 2
+      </Text>
       <View
         style={
           Object {
@@ -141,7 +275,28 @@ exports[`renders correctly with data 1`] = `
               "paddingRight": 8,
             }
           }
-        />
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "marginBottom": 0,
+              }
+            }
+          >
+            black
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            3
+          </Text>
+        </View>
         <View
           style={
             Object {
@@ -152,7 +307,28 @@ exports[`renders correctly with data 1`] = `
               "paddingRight": 8,
             }
           }
-        />
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "marginBottom": 0,
+              }
+            }
+          >
+            white
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            5
+          </Text>
+        </View>
         <View
           style={
             Object {
@@ -163,7 +339,28 @@ exports[`renders correctly with data 1`] = `
               "paddingRight": 8,
             }
           }
-        />
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "marginBottom": 0,
+              }
+            }
+          >
+            burgandy
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            4
+          </Text>
+        </View>
         <View
           style={
             Object {
@@ -174,7 +371,28 @@ exports[`renders correctly with data 1`] = `
               "paddingRight": 8,
             }
           }
-        />
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "marginBottom": 0,
+              }
+            }
+          >
+            black & white
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            0
+          </Text>
+        </View>
         <View
           style={
             Object {
@@ -185,8 +403,38 @@ exports[`renders correctly with data 1`] = `
               "paddingRight": 8,
             }
           }
-        />
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "marginBottom": 0,
+              }
+            }
+          >
+            black, white, & gray
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            4
+          </Text>
+        </View>
       </View>
+      <Text
+        style={
+          Object {
+            "fontFamily": "FanwoodText_400Regular",
+          }
+        }
+      >
+        $5,000
+      </Text>
     </View>
   </View>
 </RCTScrollView>

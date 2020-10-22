@@ -5,7 +5,7 @@ import { Product } from "../Components/Product.native";
 
 // TODO: Probably better as flatlist, or section list.
 const ProductsContainer = styled.ScrollView`
-  margin-bottom: ${(props) => props.theme.marginBottom};
+  margin-bottom: ${(props) => props.theme.margin};
 `;
 
 export const Products = ({ products = null }) => {

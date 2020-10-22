@@ -17,4 +17,5 @@ module.exports = {
     "!**/jest.setup.js",
   ],
   testEnvironment: "jsdom",
+  injectGlobals: true,
 };

@@ -1,23 +1,13 @@
+/* eslint-disable prettier/prettier */
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "@emotion/native";
-import {
-  useFonts,
-  Quattrocento_400Regular,
-  Quattrocento_700Bold,
-} from "@expo-google-fonts/quattrocento";
-import {
-  FanwoodText_400Regular,
-  FanwoodText_400Regular_Italic,
-} from "@expo-google-fonts/fanwood-text";
-import { AppLoading } from "expo";
 
 const Text = styled.Text`
   marginBottom: ${(props) => props.theme.margin};
-  fontSize: ${(props) => props.theme.default};
+  fontSize: ${(props) => props.theme.fontDefaultSize};
   fontFamily: serif;
-  fontWeight: ${(props) => props.theme.weight};
-  lineHeight: ${(props) => props.theme.lineHeight};
+  fontWeight: ${(props) => props.theme.fontDefaultWeight};
 `;
 
 const BaseText = styled(Text)`
@@ -25,47 +15,36 @@ const BaseText = styled(Text)`
 `;
 
 const H1Text = styled(BaseText)`
-  fontSize: ${(props) => props.theme.xlarge};
+  fontSize: ${(props) => props.theme.fontXLarge};
   fontFamily: Quattrocento_700Bold;
   fontWeight: 700;
 `;
 
 const H2Text = styled(BaseText)`
-  fontSize: ${(props) => props.theme.large};
+  fontSize: ${(props) => props.theme.fontLarge};
   fontFamily: Quattrocento_400Regular;
 `;
 
 const H3Text = styled(BaseText)`
-  fontSize: ${(props) => props.theme.medium};
+  fontSize: ${(props) => props.theme.fontMedium};
   fontFamily: Quattrocento_400Regular;
 `;
 
 const CaptionText = styled(BaseText)`
-  fontSize: ${(props) => props.theme.small};
+  fontSize: ${(props) => props.theme.fontSmall};
   fontFamily: FanwoodText_400Regular_Italic;
 `;
 
 export const MainText = ({ style, children }) => {
-  let [fontsLoaded] = useFonts({
-    Quattrocento_400Regular,
-    Quattrocento_700Bold,
-    FanwoodText_400Regular,
-    FanwoodText_400Regular_Italic,
-  });
-
-  if (!fontsLoaded) {
-    return <AppLoading />;
-  } else {
-    return (
-      <BaseText
-        style={css`
-          ${style}
-        `}
-      >
-        {children}
-      </BaseText>
-    );
-  }
+  return (
+    <BaseText
+      style={css`
+        ${style}
+      `}
+    >
+      {children}
+    </BaseText>
+  );
 };
 
 export const H1 = ({ style, children }) => {

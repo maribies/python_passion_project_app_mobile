@@ -4,7 +4,7 @@ import { H1, MainText } from "../Components/Text.native";
 
 // TODO: on click go to site_url.
 const ProductContainer = styled.View`
-  margin-bottom: ${(props) => props.theme.marginBottom};
+  margin-bottom: ${(props) => props.theme.margin};
 `;
 
 // TODO: maybe this could be a horizontal scroll instead of a wrap?
@@ -14,7 +14,7 @@ const StockWrapper = styled.View`
 `;
 
 const StockContainer = styled.View`
-  padding-right: 8px;
+  margin-right: 8px;
   align-items: center;
   flex-wrap: wrap;
   max-width: 64px;
@@ -23,7 +23,7 @@ const StockContainer = styled.View`
 
 const ProductImage = styled.Image`
   height: 223px;
-  margin-bottom: ${(props) => props.theme.marginBottom};
+  margin-bottom: ${(props) => props.theme.margin};
 `;
 
 export const getStockDetails = (stock) => {
