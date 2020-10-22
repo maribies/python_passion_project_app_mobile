@@ -7,7 +7,7 @@ jest.mock("@expo-google-fonts/quattrocento");
 
 test("correctly renders the text elements", () => {
   act(() => {
-    useFonts.mockReturnValue([false]);
+    useFonts.mockReturnValue([true]);
   });
 
   let text = create(<MainText>Text of the main persuasion.</MainText>);
@@ -24,21 +24,21 @@ test("correctly renders the text elements", () => {
   expect(heading.toJSON()).toMatchSnapshot();
   expect(caption.toJSON()).toMatchSnapshot();
 
-  act(() => {
-    useFonts.mockReturnValue([true]);
-  });
+  // act(() => {
+  //   useFonts.mockReturnValue([true]);
+  // });
 
-  text.update(<MainText>Text of the main persuasion.</MainText>);
-  title.update(<H1>Title!</H1>);
-  subtitle.update(<H2>I am a subtitle.</H2>);
-  heading.update(
-    <H3>Not quite a subtitle, but still more important than the rest.</H3>
-  );
-  caption.update(<Caption>I am a Caption!</Caption>);
+  // text.update(<MainText>Text of the main persuasion.</MainText>);
+  // title.update(<H1>Title!</H1>);
+  // subtitle.update(<H2>I am a subtitle.</H2>);
+  // heading.update(
+  //   <H3>Not quite a subtitle, but still more important than the rest.</H3>
+  // );
+  // caption.update(<Caption>I am a Caption!</Caption>);
 
-  expect(title.toJSON()).toMatchSnapshot();
-  expect(subtitle.toJSON()).toMatchSnapshot();
-  expect(heading.toJSON()).toMatchSnapshot();
-  expect(text.toJSON()).toMatchSnapshot();
-  expect(caption.toJSON()).toMatchSnapshot();
+  // expect(title.toJSON()).toMatchSnapshot();
+  // expect(subtitle.toJSON()).toMatchSnapshot();
+  // expect(heading.toJSON()).toMatchSnapshot();
+  // expect(text.toJSON()).toMatchSnapshot();
+  // expect(caption.toJSON()).toMatchSnapshot();
 });

@@ -24,26 +24,13 @@ exports[`renders correctly with data 1`] = `
       <Text
         style={
           Object {
-            "fontFamily": "Helvetica",
-            "fontSize": 16,
-            "fontWeight": "normal",
-            "lineHeight": 21,
+            "fontFamily": "Quattrocento_700Bold",
+            "fontSize": 20,
+            "fontWeight": "700",
           }
         }
       >
         Chanel
-      </Text>
-      <Text
-        style={
-          Object {
-            "fontFamily": "Helvetica",
-            "fontSize": 16,
-            "fontWeight": "normal",
-            "lineHeight": 21,
-          }
-        }
-      >
-        Flap Bag
       </Text>
       <View
         style={
@@ -63,32 +50,7 @@ exports[`renders correctly with data 1`] = `
               "paddingRight": 8,
             }
           }
-        >
-          <Text
-            style={
-              Object {
-                "fontFamily": "Helvetica",
-                "fontSize": 16,
-                "fontWeight": "normal",
-                "lineHeight": 21,
-              }
-            }
-          >
-            black
-          </Text>
-          <Text
-            style={
-              Object {
-                "fontFamily": "Helvetica",
-                "fontSize": 16,
-                "fontWeight": "normal",
-                "lineHeight": 21,
-              }
-            }
-          >
-            3
-          </Text>
-        </View>
+        />
         <View
           style={
             Object {
@@ -99,32 +61,7 @@ exports[`renders correctly with data 1`] = `
               "paddingRight": 8,
             }
           }
-        >
-          <Text
-            style={
-              Object {
-                "fontFamily": "Helvetica",
-                "fontSize": 16,
-                "fontWeight": "normal",
-                "lineHeight": 21,
-              }
-            }
-          >
-            white
-          </Text>
-          <Text
-            style={
-              Object {
-                "fontFamily": "Helvetica",
-                "fontSize": 16,
-                "fontWeight": "normal",
-                "lineHeight": 21,
-              }
-            }
-          >
-            5
-          </Text>
-        </View>
+        />
         <View
           style={
             Object {
@@ -135,32 +72,7 @@ exports[`renders correctly with data 1`] = `
               "paddingRight": 8,
             }
           }
-        >
-          <Text
-            style={
-              Object {
-                "fontFamily": "Helvetica",
-                "fontSize": 16,
-                "fontWeight": "normal",
-                "lineHeight": 21,
-              }
-            }
-          >
-            burgandy
-          </Text>
-          <Text
-            style={
-              Object {
-                "fontFamily": "Helvetica",
-                "fontSize": 16,
-                "fontWeight": "normal",
-                "lineHeight": 21,
-              }
-            }
-          >
-            4
-          </Text>
-        </View>
+        />
         <View
           style={
             Object {
@@ -171,32 +83,7 @@ exports[`renders correctly with data 1`] = `
               "paddingRight": 8,
             }
           }
-        >
-          <Text
-            style={
-              Object {
-                "fontFamily": "Helvetica",
-                "fontSize": 16,
-                "fontWeight": "normal",
-                "lineHeight": 21,
-              }
-            }
-          >
-            black & white
-          </Text>
-          <Text
-            style={
-              Object {
-                "fontFamily": "Helvetica",
-                "fontSize": 16,
-                "fontWeight": "normal",
-                "lineHeight": 21,
-              }
-            }
-          >
-            0
-          </Text>
-        </View>
+        />
         <View
           style={
             Object {
@@ -207,45 +94,8 @@ exports[`renders correctly with data 1`] = `
               "paddingRight": 8,
             }
           }
-        >
-          <Text
-            style={
-              Object {
-                "fontFamily": "Helvetica",
-                "fontSize": 16,
-                "fontWeight": "normal",
-                "lineHeight": 21,
-              }
-            }
-          >
-            black, white, & gray
-          </Text>
-          <Text
-            style={
-              Object {
-                "fontFamily": "Helvetica",
-                "fontSize": 16,
-                "fontWeight": "normal",
-                "lineHeight": 21,
-              }
-            }
-          >
-            4
-          </Text>
-        </View>
+        />
       </View>
-      <Text
-        style={
-          Object {
-            "fontFamily": "Helvetica",
-            "fontSize": 16,
-            "fontWeight": "normal",
-            "lineHeight": 21,
-          }
-        }
-      >
-        $5,000
-      </Text>
     </View>
     <View
       style={Object {}}
@@ -265,26 +115,13 @@ exports[`renders correctly with data 1`] = `
       <Text
         style={
           Object {
-            "fontFamily": "Helvetica",
-            "fontSize": 16,
-            "fontWeight": "normal",
-            "lineHeight": 21,
+            "fontFamily": "Quattrocento_700Bold",
+            "fontSize": 20,
+            "fontWeight": "700",
           }
         }
       >
         Chanel
-      </Text>
-      <Text
-        style={
-          Object {
-            "fontFamily": "Helvetica",
-            "fontSize": 16,
-            "fontWeight": "normal",
-            "lineHeight": 21,
-          }
-        }
-      >
-        Flap Bag 2
       </Text>
       <View
         style={
@@ -304,32 +141,7 @@ exports[`renders correctly with data 1`] = `
               "paddingRight": 8,
             }
           }
-        >
-          <Text
-            style={
-              Object {
-                "fontFamily": "Helvetica",
-                "fontSize": 16,
-                "fontWeight": "normal",
-                "lineHeight": 21,
-              }
-            }
-          >
-            black
-          </Text>
-          <Text
-            style={
-              Object {
-                "fontFamily": "Helvetica",
-                "fontSize": 16,
-                "fontWeight": "normal",
-                "lineHeight": 21,
-              }
-            }
-          >
-            3
-          </Text>
-        </View>
+        />
         <View
           style={
             Object {
@@ -340,32 +152,7 @@ exports[`renders correctly with data 1`] = `
               "paddingRight": 8,
             }
           }
-        >
-          <Text
-            style={
-              Object {
-                "fontFamily": "Helvetica",
-                "fontSize": 16,
-                "fontWeight": "normal",
-                "lineHeight": 21,
-              }
-            }
-          >
-            white
-          </Text>
-          <Text
-            style={
-              Object {
-                "fontFamily": "Helvetica",
-                "fontSize": 16,
-                "fontWeight": "normal",
-                "lineHeight": 21,
-              }
-            }
-          >
-            5
-          </Text>
-        </View>
+        />
         <View
           style={
             Object {
@@ -376,32 +163,7 @@ exports[`renders correctly with data 1`] = `
               "paddingRight": 8,
             }
           }
-        >
-          <Text
-            style={
-              Object {
-                "fontFamily": "Helvetica",
-                "fontSize": 16,
-                "fontWeight": "normal",
-                "lineHeight": 21,
-              }
-            }
-          >
-            burgandy
-          </Text>
-          <Text
-            style={
-              Object {
-                "fontFamily": "Helvetica",
-                "fontSize": 16,
-                "fontWeight": "normal",
-                "lineHeight": 21,
-              }
-            }
-          >
-            4
-          </Text>
-        </View>
+        />
         <View
           style={
             Object {
@@ -412,32 +174,7 @@ exports[`renders correctly with data 1`] = `
               "paddingRight": 8,
             }
           }
-        >
-          <Text
-            style={
-              Object {
-                "fontFamily": "Helvetica",
-                "fontSize": 16,
-                "fontWeight": "normal",
-                "lineHeight": 21,
-              }
-            }
-          >
-            black & white
-          </Text>
-          <Text
-            style={
-              Object {
-                "fontFamily": "Helvetica",
-                "fontSize": 16,
-                "fontWeight": "normal",
-                "lineHeight": 21,
-              }
-            }
-          >
-            0
-          </Text>
-        </View>
+        />
         <View
           style={
             Object {
@@ -448,45 +185,8 @@ exports[`renders correctly with data 1`] = `
               "paddingRight": 8,
             }
           }
-        >
-          <Text
-            style={
-              Object {
-                "fontFamily": "Helvetica",
-                "fontSize": 16,
-                "fontWeight": "normal",
-                "lineHeight": 21,
-              }
-            }
-          >
-            black, white, & gray
-          </Text>
-          <Text
-            style={
-              Object {
-                "fontFamily": "Helvetica",
-                "fontSize": 16,
-                "fontWeight": "normal",
-                "lineHeight": 21,
-              }
-            }
-          >
-            4
-          </Text>
-        </View>
+        />
       </View>
-      <Text
-        style={
-          Object {
-            "fontFamily": "Helvetica",
-            "fontSize": 16,
-            "fontWeight": "normal",
-            "lineHeight": 21,
-          }
-        }
-      >
-        $5,000
-      </Text>
     </View>
   </View>
 </RCTScrollView>
@@ -496,10 +196,7 @@ exports[`renders correctly with no data 1`] = `
 <Text
   style={
     Object {
-      "fontFamily": "Helvetica",
-      "fontSize": 16,
-      "fontWeight": "normal",
-      "lineHeight": 21,
+      "fontFamily": "Quattrocento_400Regular",
     }
   }
 >
@@ -511,10 +208,7 @@ exports[`renders correctly with undefined data 1`] = `
 <Text
   style={
     Object {
-      "fontFamily": "Helvetica",
-      "fontSize": 16,
-      "fontWeight": "normal",
-      "lineHeight": 21,
+      "fontFamily": "Quattrocento_400Regular",
     }
   }
 >

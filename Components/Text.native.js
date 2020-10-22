@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "@emotion/native";
-import { Text } from "react-native";
 import {
   useFonts,
   Quattrocento_400Regular,
@@ -11,35 +10,39 @@ import {
   FanwoodText_400Regular,
   FanwoodText_400Regular_Italic,
 } from "@expo-google-fonts/fanwood-text";
+import { AppLoading } from "expo";
 
-const defaultSyles = css`
-  font-family: Helvetica;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 21px;
+const Text = styled.Text`
+  marginBottom: ${(props) => props.theme.margin};
+  fontSize: ${(props) => props.theme.default};
+  fontFamily: serif;
+  fontWeight: ${(props) => props.theme.weight};
+  lineHeight: ${(props) => props.theme.lineHeight};
 `;
 
-const primary = css`
-  font-family: FanwoodText_400Regular;
+const BaseText = styled(Text)`
+  fontFamily: FanwoodText_400Regular;
 `;
 
-const primaryItalic = css`
-  font-family: FanwoodText_400Italic;
-  font-size: 12.5px;
+const H1Text = styled(BaseText)`
+  fontSize: ${(props) => props.theme.xlarge};
+  fontFamily: Quattrocento_700Bold;
+  fontWeight: 700;
 `;
 
-const secondary = css`
-  font-family: Quattrocento_400Regular;
-  font-size: 26px;
+const H2Text = styled(BaseText)`
+  fontSize: ${(props) => props.theme.large};
+  fontFamily: Quattrocento_400Regular;
 `;
 
-const secondaryBold = css`
-  font-family: Quattrocento_700Bold;
-  font-size: 33px;
+const H3Text = styled(BaseText)`
+  fontSize: ${(props) => props.theme.medium};
+  fontFamily: Quattrocento_400Regular;
 `;
 
-const BaseText = styled.Text`
-  marginbottom: ${(props) => props.theme.marginBottom};
+const CaptionText = styled(BaseText)`
+  fontSize: ${(props) => props.theme.small};
+  fontFamily: FanwoodText_400Regular_Italic;
 `;
 
 export const MainText = ({ style, children }) => {
@@ -51,78 +54,65 @@ export const MainText = ({ style, children }) => {
   });
 
   if (!fontsLoaded) {
+    return <AppLoading />;
+  } else {
     return (
-      <Text
+      <BaseText
         style={css`
-          ${defaultSyles}
+          ${style}
         `}
       >
         {children}
-      </Text>
+      </BaseText>
     );
   }
+};
 
+export const H1 = ({ style, children }) => {
   return (
-    <BaseText
+    <H1Text
       style={css`
-        ${primary} ${style}
+        ${style};
       `}
     >
       {children}
-    </BaseText>
+    </H1Text>
   );
 };
 
-export const H1 = (props) => {
+export const H2 = ({ style, children }) => {
   return (
-    <MainText
+    <H2Text
       style={css`
-        ${secondaryBold};
-        ${props.style};
+        ${style};
       `}
     >
-      {props.children}
-    </MainText>
+      {children}
+    </H2Text>
   );
 };
 
-export const H2 = (props) => {
+export const H3 = ({ style, children }) => {
   return (
-    <MainText
+    <H3Text
       style={css`
-        ${secondary};
-        ${props.style};
+        ${style};
       `}
     >
-      {props.children}
-    </MainText>
+      {children}
+    </H3Text>
   );
 };
 
-export const H3 = (props) => {
+export const Caption = ({ style, children }) => {
   return (
-    <MainText
+    <CaptionText
       style={css`
-        ${secondary};
-        font-size: 20px;
-        ${props.style};
+        ${style};
       `}
     >
-      {props.children}
-    </MainText>
-  );
-};
-
-export const Caption = (props) => {
-  return (
-    <MainText
-      style={css`
-        ${primaryItalic};
-        ${props.style};
-      `}
-    >
-      {props.children}
-    </MainText>
+      {children}
+    </CaptionText>
   );
 };
 

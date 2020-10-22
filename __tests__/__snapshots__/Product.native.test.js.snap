@@ -4,10 +4,8 @@ exports[`renders correctly with data 1`] = `
 <Text
   style={
     Object {
-      "fontFamily": "Helvetica",
-      "fontSize": 16,
-      "fontWeight": "normal",
-      "lineHeight": 21,
+      "fontFamily": "Quattrocento_700Bold",
+      "fontWeight": "700",
     }
   }
 >
@@ -19,10 +17,8 @@ exports[`renders correctly with no data 1`] = `
 <Text
   style={
     Object {
-      "fontFamily": "Helvetica",
-      "fontSize": 16,
-      "fontWeight": "normal",
-      "lineHeight": 21,
+      "fontFamily": "Quattrocento_700Bold",
+      "fontWeight": "700",
     }
   }
 >
@@ -34,10 +30,8 @@ exports[`renders correctly with undefined data 1`] = `
 <Text
   style={
     Object {
-      "fontFamily": "Helvetica",
-      "fontSize": 16,
-      "fontWeight": "normal",
-      "lineHeight": 21,
+      "fontFamily": "Quattrocento_700Bold",
+      "fontWeight": "700",
     }
   }
 >

@@ -4,10 +4,7 @@ exports[`correctly renders the text elements 1`] = `
 <Text
   style={
     Object {
-      "fontFamily": "Helvetica",
-      "fontSize": 16,
-      "fontWeight": "normal",
-      "lineHeight": 21,
+      "fontFamily": "FanwoodText_400Regular",
     }
   }
 >
@@ -19,10 +16,8 @@ exports[`correctly renders the text elements 2`] = `
 <Text
   style={
     Object {
-      "fontFamily": "Helvetica",
-      "fontSize": 16,
-      "fontWeight": "normal",
-      "lineHeight": 21,
+      "fontFamily": "Quattrocento_700Bold",
+      "fontWeight": "700",
     }
   }
 >
@@ -34,10 +29,7 @@ exports[`correctly renders the text elements 3`] = `
 <Text
   style={
     Object {
-      "fontFamily": "Helvetica",
-      "fontSize": 16,
-      "fontWeight": "normal",
-      "lineHeight": 21,
+      "fontFamily": "Quattrocento_400Regular",
     }
   }
 >
@@ -49,10 +41,7 @@ exports[`correctly renders the text elements 4`] = `
 <Text
   style={
     Object {
-      "fontFamily": "Helvetica",
-      "fontSize": 16,
-      "fontWeight": "normal",
-      "lineHeight": 21,
+      "fontFamily": "Quattrocento_400Regular",
     }
   }
 >
@@ -64,74 +53,7 @@ exports[`correctly renders the text elements 5`] = `
 <Text
   style={
     Object {
-      "fontFamily": "Helvetica",
-      "fontSize": 16,
-      "fontWeight": "normal",
-      "lineHeight": 21,
-    }
-  }
->
-  I am a Caption!
-</Text>
-`;
-
-exports[`correctly renders the text elements 6`] = `
-<Text
-  style={
-    Object {
-      "fontFamily": "Quattrocento_700Bold",
-      "fontSize": 33,
-    }
-  }
->
-  Title!
-</Text>
-`;
-
-exports[`correctly renders the text elements 7`] = `
-<Text
-  style={
-    Object {
-      "fontFamily": "Quattrocento_400Regular",
-      "fontSize": 26,
-    }
-  }
->
-  I am a subtitle.
-</Text>
-`;
-
-exports[`correctly renders the text elements 8`] = `
-<Text
-  style={
-    Object {
-      "fontFamily": "Quattrocento_400Regular",
-      "fontSize": 20,
-    }
-  }
->
-  Not quite a subtitle, but still more important than the rest.
-</Text>
-`;
-
-exports[`correctly renders the text elements 9`] = `
-<Text
-  style={
-    Object {
-      "fontFamily": "FanwoodText_400Regular",
-    }
-  }
->
-  Text of the main persuasion.
-</Text>
-`;
-
-exports[`correctly renders the text elements 10`] = `
-<Text
-  style={
-    Object {
-      "fontFamily": "FanwoodText_400Italic",
-      "fontSize": 12.5,
+      "fontFamily": "FanwoodText_400Regular_Italic",
     }
   }
 >

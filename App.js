@@ -1,14 +1,21 @@
 import React from "react";
+import { ThemeProvider } from "emotion-theming";
 import { H1, H3 } from "./Components/Text";
 import { Layout } from "./Components/Layout.native";
-import { ThemeProvider } from "emotion-theming";
 import { Products } from "./Components/Products.native";
+
 import products from "./Fixtures/products";
 
-// TODO: update the theme with the custom fonts so rerendering is happening here instead of in text component.
 const theme = {
-  marginTop: "20px",
-  marginBottom: "20px",
+  margin: "20px",
+  xlarge: "33px",
+  large: "26px",
+  medium: "20px",
+  default: "16px",
+  small: "12.5px",
+  family: "Georgia",
+  weight: "normal",
+  lineHeight: "21px",
 };
 
 export default function App() {
