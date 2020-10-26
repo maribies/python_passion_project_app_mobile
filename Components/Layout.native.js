@@ -1,9 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "@emotion/native";
 import { StatusBar } from "expo-status-bar";
 
 const LayoutWrapper = styled.View`
-  margin-top: ${props => props.theme.marginTop};
+  margin-top: ${(props) => props.theme.margin};
   width: 68%;
   height: 100%;
   margin-left: 67px;
@@ -11,16 +12,25 @@ const LayoutWrapper = styled.View`
 `;
 
 const StatusBarWrapper = styled.View`
-  margin-top: ${props => props.theme.marginTop};
+  margin-top: ${(props) => props.theme.margin};
 `;
 
-export const Layout = props => {
+export const Layout = (props) => {
   return (
     <LayoutWrapper>
       <StatusBarWrapper>
-        <StatusBar style="auto" />  
+        <StatusBar style="auto" />
       </StatusBarWrapper>
       {props.children}
     </LayoutWrapper>
-  )
-}
+  );
+};
+
+Layout.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element),
+  ]).isRequired,
+};

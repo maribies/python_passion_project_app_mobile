@@ -1,0 +1,465 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with data 1`] = `
+<RCTScrollView
+  showsVerticalScrollIndicator={false}
+  style={Object {}}
+>
+  <View>
+    <View
+      style={Object {}}
+    >
+      <Image
+        source={
+          Object {
+            "uri": "https://via.placeholder.com/150",
+          }
+        }
+        style={
+          Object {
+            "height": 223,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "fontFamily": "Quattrocento_700Bold",
+            "fontSize": 20,
+            "fontWeight": "700",
+          }
+        }
+      >
+        Chanel
+      </Text>
+      <Text
+        style={
+          Object {
+            "fontFamily": "FanwoodText_400Regular",
+            "fontSize": 20,
+          }
+        }
+      >
+        Flap Bag
+      </Text>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-start",
+              "maxWidth": 64,
+              "paddingRight": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "marginBottom": 0,
+              }
+            }
+          >
+            black
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            3
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-start",
+              "maxWidth": 64,
+              "paddingRight": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "marginBottom": 0,
+              }
+            }
+          >
+            white
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            5
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-start",
+              "maxWidth": 64,
+              "paddingRight": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "marginBottom": 0,
+              }
+            }
+          >
+            burgandy
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            4
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-start",
+              "maxWidth": 64,
+              "paddingRight": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "marginBottom": 0,
+              }
+            }
+          >
+            black & white
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            0
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-start",
+              "maxWidth": 64,
+              "paddingRight": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "marginBottom": 0,
+              }
+            }
+          >
+            black, white, & gray
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            4
+          </Text>
+        </View>
+      </View>
+      <Text
+        style={
+          Object {
+            "fontFamily": "FanwoodText_400Regular",
+          }
+        }
+      >
+        $5,000
+      </Text>
+    </View>
+    <View
+      style={Object {}}
+    >
+      <Image
+        source={
+          Object {
+            "uri": "https://via.placeholder.com/150",
+          }
+        }
+        style={
+          Object {
+            "height": 223,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "fontFamily": "Quattrocento_700Bold",
+            "fontSize": 20,
+            "fontWeight": "700",
+          }
+        }
+      >
+        Chanel
+      </Text>
+      <Text
+        style={
+          Object {
+            "fontFamily": "FanwoodText_400Regular",
+            "fontSize": 20,
+          }
+        }
+      >
+        Flap Bag 2
+      </Text>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-start",
+              "maxWidth": 64,
+              "paddingRight": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "marginBottom": 0,
+              }
+            }
+          >
+            black
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            3
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-start",
+              "maxWidth": 64,
+              "paddingRight": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "marginBottom": 0,
+              }
+            }
+          >
+            white
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            5
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-start",
+              "maxWidth": 64,
+              "paddingRight": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "marginBottom": 0,
+              }
+            }
+          >
+            burgandy
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            4
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-start",
+              "maxWidth": 64,
+              "paddingRight": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "marginBottom": 0,
+              }
+            }
+          >
+            black & white
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            0
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexWrap": "wrap",
+              "justifyContent": "flex-start",
+              "maxWidth": 64,
+              "paddingRight": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "marginBottom": 0,
+              }
+            }
+          >
+            black, white, & gray
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "FanwoodText_400Regular",
+                "justifyContent": "flex-end",
+              }
+            }
+          >
+            4
+          </Text>
+        </View>
+      </View>
+      <Text
+        style={
+          Object {
+            "fontFamily": "FanwoodText_400Regular",
+          }
+        }
+      >
+        $5,000
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`renders correctly with no data 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "Quattrocento_400Regular",
+    }
+  }
+>
+  Something went wrong. No products are found yet!
+</Text>
+`;
+
+exports[`renders correctly with undefined data 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "Quattrocento_400Regular",
+    }
+  }
+>
+  Something went wrong. No products are found yet!
+</Text>
+`;

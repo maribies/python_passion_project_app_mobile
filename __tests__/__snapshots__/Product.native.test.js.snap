@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with data 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "Quattrocento_700Bold",
+      "fontWeight": "700",
+    }
+  }
+>
+  Oops! No Data!
+</Text>
+`;
+
+exports[`renders correctly with no data 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "Quattrocento_700Bold",
+      "fontWeight": "700",
+    }
+  }
+>
+  Oops! No Data!
+</Text>
+`;
+
+exports[`renders correctly with undefined data 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "Quattrocento_700Bold",
+      "fontWeight": "700",
+    }
+  }
+>
+  Oops! No Data!
+</Text>
+`;

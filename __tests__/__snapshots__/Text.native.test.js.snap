@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`correctly renders the text elements 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "FanwoodText_400Regular",
+    }
+  }
+>
+  Text of the main persuasion.
+</Text>
+`;
+
+exports[`correctly renders the text elements 2`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "Quattrocento_700Bold",
+      "fontWeight": "700",
+    }
+  }
+>
+  Title!
+</Text>
+`;
+
+exports[`correctly renders the text elements 3`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "Quattrocento_400Regular",
+    }
+  }
+>
+  I am a subtitle.
+</Text>
+`;
+
+exports[`correctly renders the text elements 4`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "Quattrocento_400Regular",
+    }
+  }
+>
+  Not quite a subtitle, but still more important than the rest.
+</Text>
+`;
+
+exports[`correctly renders the text elements 5`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "FanwoodText_400Regular_Italic",
+    }
+  }
+>
+  I am a Caption!
+</Text>
+`;
