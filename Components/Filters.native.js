@@ -1,89 +1,102 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "@emotion/native";
 import { H3, MainText } from "./Text.native";
+import { useFilters } from "../Hooks/useFilters";
 
-// TODO: space underneath only needed if wrapping.
 const FilterButton = styled.TouchableOpacity`
-  background-color: ${(props) => props.theme.colors.primary};
+  background-color: ${(props) =>
+    props.isActive ? props.theme.colors.dark : props.theme.colors.primary};
   border-radius: ${(props) => props.theme.inputs.borderRadius};
   padding: ${(props) => props.theme.inputs.padding};
   margin-right: 8px;
   margin-bottom: 8px;
 `;
 
-// TODO: Doesn't respect parent container.
+const CloseButton = styled.TouchableOpacity`
+  position: absolute;
+  right: -16;
+  top: -8;
+  padding: 8px;
+`;
+
 const FiltersContainer = styled.View`
   justify-content: center,
   align-items: center,
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: ${(props) => props.theme.marginBottom};
+  margin-bottom: ${(props) => props.theme.margin};
+  flex: 1;
 `;
 
 const FiltersWrapper = styled.View`
   flex-direction: row;
 `;
 
-const openFilterOrSubFilters = (filter, subFilters, setFilters) => {
-  if (!subFilters || subFilters == []) {
+const FilterText = styled(MainText)`
+  color: ${(props) => (props.isActive ? "white" : "black")};
+  margin-bottom: 0;
+  padding-right: ${(props) => (props.isActive ? "16px" : 0)};
+`;
+
+export const filterOrSubfilter = (filters, filter) => {
+  if (filters.subcategories.includes(filter)) {
     // TODO: Proper filter function
     console.log(`TODO... Will filter products based on ${filter}.`);
     return;
   }
 
   // TODO: allow for multiple categories
-  // TODO: allow to clear?
-  return setFilters(subFilters);
+  return filters.updateFilters(filter);
 };
 
-const createFilter = (filter, allFilters, setFilters) => {
+export const createFilter = (filters, filter) => {
   const title = filter.charAt(0).toUpperCase() + filter.slice(1);
-
-  const subFilters = allFilters[filter];
+  const isActive = filters.activeFilters.includes(filter);
 
   return (
     <FilterButton
       onPress={() => {
-        openFilterOrSubFilters(filter, subFilters, setFilters);
+        filterOrSubfilter(filters, filter);
+        filters.updateActiveFilters(filter);
       }}
       key={title}
+      isActive={isActive}
     >
-      <MainText style={{ marginBottom: 0 }}>{title}</MainText>
+      <FilterText isActive={isActive}>{title}</FilterText>
+      {isActive && (
+        <CloseButton
+          onPress={() => {
+            filters.clearAllFilters();
+          }}
+        >
+          <FilterText isActive={isActive}>x</FilterText>
+        </CloseButton>
+      )}
     </FilterButton>
   );
 };
 
-const createFilters = (filters, allFilters, setFilters) => {
-  return filters.map((filter) => {
-    return createFilter(filter, allFilters, setFilters);
+export const createFilters = (filters) => {
+  return filters.names.map((filter) => {
+    return createFilter(filters, filter);
   });
-};
-
-const getGroupFilters = (allFilters) => {
-  const keys = Object.keys(allFilters);
-
-  return keys;
 };
 
 export const Filters = ({ types = null }) => {
   if (!types) {
-    return <H3>Something is wrong.`</H3>;
+    return null;
   }
 
-  const allFilters = types.filters;
-
-  const filterGroups = getGroupFilters(allFilters);
-
-  const [filters, setFilters] = useState(filterGroups);
+  const filters = useFilters(types.filters);
 
   return (
     <FiltersWrapper>
-      <H3 style={{ marginBottom: 0, marginTop: 8, marginRight: 20 }}>
-        Filters
-      </H3>
-
       <FiltersContainer>
-        {createFilters(filters, allFilters, setFilters)}
+        <H3 style={{ marginBottom: 0, marginTop: 8, marginRight: 20 }}>
+          Filters
+        </H3>
+
+        {createFilters(filters)}
       </FiltersContainer>
     </FiltersWrapper>
   );

@@ -29,10 +29,12 @@ const theme = {
   fontSmall: "12.5px",
   fontDefaultFamily: "Georgia",
   fontDefaultWeight: "normal",
-  marginTop: "20px",
-  marginBottom: "20px",
   colors: {
-    primary: "lavender",
+    primary: "#E6E6FA", // lavender
+    dark: "#401F3E", // dark purple
+    dark2: "#3F2E56", // english violet
+    dark3: "#453F78", // dark slate blue
+    secondary: "#FAF2A1", // green yellow crayola
   },
   inputs: {
     borderRadius: "8px",

@@ -245,7 +245,7 @@ exports[`renders correctly with data 1`] = `
           }
         }
       >
-        Chanel
+        Bao Bao by Issey Miyake
       </Text>
       <Text
         style={
@@ -255,7 +255,7 @@ exports[`renders correctly with data 1`] = `
           }
         }
       >
-        Flap Bag 2
+        Lucent Crossbody
       </Text>
       <View
         style={
@@ -284,7 +284,7 @@ exports[`renders correctly with data 1`] = `
               }
             }
           >
-            black
+            green
           </Text>
           <Text
             style={
@@ -316,7 +316,7 @@ exports[`renders correctly with data 1`] = `
               }
             }
           >
-            white
+            yellow
           </Text>
           <Text
             style={
@@ -348,7 +348,7 @@ exports[`renders correctly with data 1`] = `
               }
             }
           >
-            burgandy
+            red
           </Text>
           <Text
             style={
@@ -380,7 +380,7 @@ exports[`renders correctly with data 1`] = `
               }
             }
           >
-            black & white
+            orange
           </Text>
           <Text
             style={
@@ -412,7 +412,7 @@ exports[`renders correctly with data 1`] = `
               }
             }
           >
-            black, white, & gray
+            White X black
           </Text>
           <Text
             style={
@@ -433,7 +433,7 @@ exports[`renders correctly with data 1`] = `
           }
         }
       >
-        $5,000
+        $500
       </Text>
     </View>
   </View>
