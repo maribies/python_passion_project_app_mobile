@@ -5,6 +5,9 @@ exports[`correctly renders the text elements 1`] = `
   style={
     Object {
       "fontFamily": "FanwoodText_400Regular",
+      "fontSize": 16,
+      "fontWeight": "normal",
+      "marginBottom": 20,
     }
   }
 >
@@ -17,7 +20,9 @@ exports[`correctly renders the text elements 2`] = `
   style={
     Object {
       "fontFamily": "Quattrocento_700Bold",
+      "fontSize": 33,
       "fontWeight": "700",
+      "marginBottom": 20,
     }
   }
 >
@@ -30,6 +35,9 @@ exports[`correctly renders the text elements 3`] = `
   style={
     Object {
       "fontFamily": "Quattrocento_400Regular",
+      "fontSize": 26,
+      "fontWeight": "normal",
+      "marginBottom": 20,
     }
   }
 >
@@ -42,6 +50,9 @@ exports[`correctly renders the text elements 4`] = `
   style={
     Object {
       "fontFamily": "Quattrocento_400Regular",
+      "fontSize": 20,
+      "fontWeight": "normal",
+      "marginBottom": 20,
     }
   }
 >
@@ -54,6 +65,9 @@ exports[`correctly renders the text elements 5`] = `
   style={
     Object {
       "fontFamily": "FanwoodText_400Regular_Italic",
+      "fontSize": 12.5,
+      "fontWeight": "normal",
+      "marginBottom": 20,
     }
   }
 >
