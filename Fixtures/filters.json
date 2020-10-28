@@ -1,0 +1,7 @@
+{
+  "filters": {
+    "designers": ["Chanel", "Issey Miyake"],
+    "colors": ["black", "purple"],
+    "price": ["under 200", "200-500", "500-1000", "1000+"]
+  }
+}

@@ -18,4 +18,6 @@ module.exports = {
   ],
   testEnvironment: "jsdom",
   injectGlobals: true,
+  snapshotSerializers: ["jest-emotion"],
+  setupFilesAfterEnv: [`<rootDir>/setup-test-env.js`],
 };
