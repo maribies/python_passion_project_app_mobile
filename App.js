@@ -16,18 +16,9 @@ import { Layout } from "./Components/Layout.native";
 import { Products } from "./Components/Products.native";
 import { SearchBar } from "./Components/SearchBar.native";
 
-import products from "./Fixtures/products";
+import { theme } from "./theme";
 
-const theme = {
-  margin: "20px",
-  fontXLarge: "33px",
-  fontLarge: "26px",
-  fontMedium: "20px",
-  fontDefaultSize: "16px",
-  fontSmall: "12.5px",
-  fontDefaultFamily: "Georgia",
-  fontDefaultWeight: "normal",
-};
+import products from "./Fixtures/products";
 
 export default function App() {
   let [fontsLoaded] = useFonts({

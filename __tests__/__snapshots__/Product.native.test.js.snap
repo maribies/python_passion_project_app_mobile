@@ -5,7 +5,9 @@ exports[`renders correctly with data 1`] = `
   style={
     Object {
       "fontFamily": "Quattrocento_700Bold",
+      "fontSize": 33,
       "fontWeight": "700",
+      "marginBottom": 20,
     }
   }
 >
@@ -18,7 +20,9 @@ exports[`renders correctly with no data 1`] = `
   style={
     Object {
       "fontFamily": "Quattrocento_700Bold",
+      "fontSize": 33,
       "fontWeight": "700",
+      "marginBottom": 20,
     }
   }
 >
@@ -31,7 +35,9 @@ exports[`renders correctly with undefined data 1`] = `
   style={
     Object {
       "fontFamily": "Quattrocento_700Bold",
+      "fontSize": 33,
       "fontWeight": "700",
+      "marginBottom": 20,
     }
   }
 >

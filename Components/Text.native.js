@@ -1,38 +1,37 @@
-/* eslint-disable prettier/prettier */
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "@emotion/native";
 
 const Text = styled.Text`
-  marginBottom: ${(props) => props.theme.margin};
-  fontSize: ${(props) => props.theme.fontDefaultSize};
-  fontFamily: serif;
-  fontWeight: ${(props) => props.theme.fontDefaultWeight};
+  margin-bottom: ${(props) => props.theme.margin};
+  font-size: ${(props) => props.theme.fonts.default};
+  font-family: serif;
+  font-weight: ${(props) => props.theme.fonts.weight};
 `;
 
 const BaseText = styled(Text)`
-  fontFamily: FanwoodText_400Regular;
+  font-family: FanwoodText_400Regular;
 `;
 
 const H1Text = styled(BaseText)`
-  fontSize: ${(props) => props.theme.fontXLarge};
-  fontFamily: Quattrocento_700Bold;
-  fontWeight: 700;
+  font-size: ${(props) => props.theme.fonts.xLarge};
+  font-family: Quattrocento_700Bold;
+  font-weight: 700;
 `;
 
 const H2Text = styled(BaseText)`
-  fontSize: ${(props) => props.theme.fontLarge};
-  fontFamily: Quattrocento_400Regular;
+  font-size: ${(props) => props.theme.fonts.large};
+  font-family: Quattrocento_400Regular;
 `;
 
 const H3Text = styled(BaseText)`
-  fontSize: ${(props) => props.theme.fontMedium};
-  fontFamily: Quattrocento_400Regular;
+  font-size: ${(props) => props.theme.fonts.medium};
+  font-family: Quattrocento_400Regular;
 `;
 
 const CaptionText = styled(BaseText)`
-  fontSize: ${(props) => props.theme.fontSmall};
-  fontFamily: FanwoodText_400Regular_Italic;
+  font-size: ${(props) => props.theme.fonts.small};
+  font-family: FanwoodText_400Regular_Italic;
 `;
 
 export const MainText = ({ style, children }) => {
