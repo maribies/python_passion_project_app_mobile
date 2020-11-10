@@ -10,7 +10,7 @@ const ProductsContainer = styled.ScrollView`
 
 export const Products = ({ products = null }) => {
   // TODO: Create a generic error component to return with custom message.
-  if (!products) {
+  if (!products || products.length === 0) {
     return <H3>Something went wrong. No products are found yet!</H3>;
   }
 
@@ -19,6 +19,8 @@ export const Products = ({ products = null }) => {
   return (
     <ProductsContainer showsVerticalScrollIndicator={false}>
       {productsData.map((product) => {
+        product = JSON.parse(product);
+
         return <Product product={product} key={product.sku} />;
       })}
     </ProductsContainer>

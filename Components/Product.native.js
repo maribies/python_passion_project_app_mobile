@@ -50,13 +50,13 @@ export const Product = ({ product = null }) => {
 
   return (
     <ProductContainer>
-      <ProductImage source={{ uri: images[0] }} />
+      {images && <ProductImage source={{ uri: images[0] }} />}
 
       <H1 style={{ fontSize: 20 }}>{designer}</H1>
 
       <MainText style={{ fontSize: 20 }}>{name}</MainText>
 
-      <StockWrapper>{getStockDetails(stock)}</StockWrapper>
+      {stock && <StockWrapper>{getStockDetails(stock)}</StockWrapper>}
 
       <MainText>{product_price}</MainText>
     </ProductContainer>

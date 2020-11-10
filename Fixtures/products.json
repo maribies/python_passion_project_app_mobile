@@ -1,37 +1,86 @@
 {
-  "products": [{
-    "name": "Flap Bag",
-    "designer": "Chanel",
-    "product_price": "$5,000",
-    "site_url": "https.chanel.com/flap-bag",
-    "condition": "New",
-    "material": "Leather, metal",
-    "size": "OS",
-    "dimensions": "10 x 12 in",
-    "sku": "TestSKU-1",
-    "season": "SS 2020",
-    "collection": "Seasonal",
-    "category": "bags",
-    "brand": "Chanel",
-    "images": ["https://via.placeholder.com/150", "https://via.placeholder.com/150"],
-    "stock": [{"color": "black", "quantity": 3}, {"color": "white", "quantity": 5}, {"color": "burgandy", "quantity": 4}, {"color": "black & white", "quantity": 0}, {"color": "black, white, & gray", "quantity": 4}],
-    "keywords": ["Flap Bag", "Chanel", "Leather", "metal", "TestSKU-1", "SS2020", "Seasonal"]
-    }, {
-    "name": "Flap Bag 2",
-    "designer": "Chanel",
-    "product_price": "$5,000",
-    "site_url": "https.chanel.com/flap-bag",
-    "condition": "New",
-    "material": "Leather, metal",
-    "size": "OS",
-    "dimensions": "10 x 12 in",
-    "sku": "TestSKU-2",
-    "season": "SS 2020",
-    "collection": "Seasonal",
-    "category": "bags",
-    "brand": "Chanel",
-    "images": ["https://via.placeholder.com/150", "https://via.placeholder.com/150"],
-    "stock": [{"color": "black", "quantity": 3}, {"color": "white", "quantity": 5}, {"color": "burgandy", "quantity": 4}, {"color": "black & white", "quantity": 0}, {"color": "black, white, & gray", "quantity": 4}],
-    "keywords": ["Flap Bag", "Chanel", "Leather", "metal", "TestSKU-1", "SS2020", "Seasonal"]
-    }]
+  "products": [
+    {
+      "name": "Flap Bag",
+      "designer": "Chanel",
+      "product_price": "$5,000",
+      "site_url": "https.chanel.com/flap-bag",
+      "condition": "New",
+      "material": "Leather, metal",
+      "size": "OS",
+      "dimensions": "10 x 12 in",
+      "sku": "TestSKU-1",
+      "season": "SS 2020",
+      "collection": "Seasonal",
+      "category": "bags",
+      "brand": "Chanel",
+      "images": [
+        "https://via.placeholder.com/150",
+        "https://via.placeholder.com/150"
+      ],
+      "stock": [
+        {
+          "color": "black",
+          "quantity": 3
+        },
+        {
+          "color": "white",
+          "quantity": 5
+        },
+        {
+          "color": "burgandy",
+          "quantity": 4
+        },
+        {
+          "color": "black & white",
+          "quantity": 0
+        },
+        {
+          "color": "black, white, & gray",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "name": "Lucent Crossbody",
+      "designer": "Bao Bao by Issey Miyake",
+      "product_price": "$500",
+      "site_url": "https.baobao.com/lucent-crossbody",
+      "condition": "New",
+      "material": "Surface: Vinyl chloride resin / Base fabric: 100% polyester / Lining: 100% nylon / Tape: 100% nylon / Part: Artificial leather",
+      "size": "OS",
+      "dimensions": "10 x 12 in",
+      "sku": "TestSKU-2",
+      "season": "FW 2020",
+      "collection": "Seasonal",
+      "category": "bags",
+      "brand": "Bao Bao",
+      "images": [
+        "https://via.placeholder.com/150",
+        "https://via.placeholder.com/150"
+      ],
+      "stock": [
+        {
+          "color": "green",
+          "quantity": 3
+        },
+        {
+          "color": "yellow",
+          "quantity": 5
+        },
+        {
+          "color": "red",
+          "quantity": 4
+        },
+        {
+          "color": "orange",
+          "quantity": 0
+        },
+        {
+          "color": "White X black",
+          "quantity": 4
+        }
+      ]
+    }
+  ]
 }
