@@ -39,4 +39,17 @@ describe("useProductsHook", () => {
     expect(result.current.status).toEqual("error");
     expect(result.current.error).toBeDefined();
   });
+
+  it("returns pages", async () => {
+    const { result } = renderHook(() => useProducts(products));
+
+    expect(fetch).toHaveBeenCalledTimes(1);
+    await act(() => fetch());
+
+    expect(result.current.status).toEqual("fetched");
+    expect(result.current.pages.next).toEqual(products.next);
+    expect(result.current.pages.previous).toEqual(products.previous);
+    expect(result.current.pages.current).toEqual(products.current);
+    expect(result.current.pages.total).toEqual(products.total);
+  });
 });

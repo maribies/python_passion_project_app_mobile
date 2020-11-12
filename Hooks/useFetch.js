@@ -8,15 +8,17 @@ export const useFetch = (url) => {
   useEffect(() => {
     const fetchData = async (url) => {
       setStatus("fetching");
-      fetch(url)
+
+      await fetch(url)
         .then((results) => results.json())
         .then((results) => {
           setData(results);
-          return setStatus("fetched");
         })
         .catch((error) => {
           setError(error);
-          return setStatus("error");
+        })
+        .finally(() => {
+          setStatus("fetched");
         });
     };
 

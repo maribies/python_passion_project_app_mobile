@@ -1,28 +1,41 @@
 import { useState, useEffect } from "react";
-import { useFetch } from "./useFetch";
 
 export const useProducts = (
   url = "https://findandseek.herokuapp.com/api/v1/products/"
 ) => {
   const [products, setProducts] = useState(null);
   const [error, setError] = useState(false);
-  const [status, setStatus] = useState("");
-
-  const response = useFetch(url);
+  const [status, setStatus] = useState("fetching");
+  const [pages, setPages] = useState(null);
 
   useEffect(() => {
-    if (response.error) {
-      setError(response.error);
-    }
+    const fetchProducts = async (url) => {
+      setStatus("fetching");
 
-    if (response.status == "fetched") {
-      const productsData = response.data.products;
+      await fetch(url)
+        .then((response) => response.json())
+        .then((response) => {
+          const productsData = response.products;
+          const pagesData = {
+            next: response.next,
+            previous: response.previous,
+            current: response.current,
+            total: response.total,
+          };
 
-      setProducts(productsData);
-    }
+          setProducts(productsData);
+          setPages(pagesData);
+        })
+        .catch((error) => {
+          setError(error);
+        })
+        .finally(() => {
+          setStatus("fetched");
+        });
+    };
 
-    setStatus(response.status);
-  }, [response]);
+    fetchProducts(url);
+  }, []);
 
-  return { status, products, error };
+  return { status, pages, products, error };
 };

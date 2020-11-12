@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "@emotion/native";
 import { H1, MainText } from "../Components/Text.native";
+import * as Linking from "expo-linking";
 
-// TODO: on click go to site_url.
-const ProductContainer = styled.View`
+const ProductContainer = styled.TouchableOpacity`
   margin-bottom: ${(props) => props.theme.margin};
 `;
 
@@ -26,6 +26,10 @@ const ProductImage = styled.Image`
   margin-bottom: ${(props) => props.theme.margin};
 `;
 
+export const openSiteURL = (site_url) => {
+  return Linking.openURL(site_url);
+};
+
 export const getStockDetails = (stock) => {
   return stock.map((data) => {
     const { color, quantity } = data;
@@ -46,17 +50,17 @@ export const Product = ({ product = null }) => {
     return <H1>Oops! No Data!</H1>;
   }
 
-  const { designer, name, product_price, images, stock } = product;
+  const { designer, name, product_price, images, stock, site_url } = product;
 
   return (
-    <ProductContainer>
+    <ProductContainer onPress={() => openSiteURL(site_url)}>
       {images && <ProductImage source={{ uri: images[0] }} />}
 
       <H1 style={{ fontSize: 20 }}>{designer}</H1>
 
       <MainText style={{ fontSize: 20 }}>{name}</MainText>
 
-      {stock && <StockWrapper>{getStockDetails(stock)}</StockWrapper>}
+      {stock && <StockWrapper>{() => getStockDetails(stock)}</StockWrapper>}
 
       <MainText>{product_price}</MainText>
     </ProductContainer>

@@ -82,5 +82,9 @@
         }
       ]
     }
-  ]
+  ],
+  "next": 3,
+  "previous": 1,
+  "current": 2,
+  "total": 4
 }

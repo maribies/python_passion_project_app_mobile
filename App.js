@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ThemeProvider } from "emotion-theming";
 import { AppLoading } from "expo";
 import {
@@ -27,13 +27,13 @@ export default function App() {
     FanwoodText_400Regular_Italic,
   });
 
-  const products = useProducts(
+  const productsData = useProducts(
     "https://findandseek.herokuapp.com/api/v1/products/?page=1"
   );
 
-  if (!fontsLoaded || products.status == "fetching") {
+  if (!fontsLoaded || productsData.status != "fetched") {
     return <AppLoading />;
-  } else if (products.error) {
+  } else if (productsData.error) {
     return (
       <ThemeProvider theme={theme}>
         <Layout>
@@ -48,7 +48,7 @@ export default function App() {
           <H1>Find and Seek</H1>
           <H3>FIND THE PERFECT PIECE FROM ANYWHERE ON THE INTERNET</H3>
           <SearchBar />
-          <Products products={products} />
+          <Products products={productsData} />
         </Layout>
       </ThemeProvider>
     );
