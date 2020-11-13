@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ThemeProvider } from "emotion-theming";
 import { AppLoading } from "expo";
 import {
@@ -18,8 +18,6 @@ import { SearchBar } from "./Components/SearchBar.native";
 
 import { theme } from "./theme";
 
-import products from "./Fixtures/products";
-
 export default function App() {
   let [fontsLoaded] = useFonts({
     Quattrocento_400Regular,
@@ -27,6 +25,7 @@ export default function App() {
     FanwoodText_400Regular,
     FanwoodText_400Regular_Italic,
   });
+
 
   if (!fontsLoaded) {
     return <AppLoading />;
@@ -37,8 +36,7 @@ export default function App() {
           <H1>Find and Seek</H1>
           <H3>FIND THE PERFECT PIECE FROM ANYWHERE ON THE INTERNET</H3>
           <SearchBar />
-          <H3>Filters</H3>
-          <Products products={products} />
+          <Products />
         </Layout>
       </ThemeProvider>
     );
