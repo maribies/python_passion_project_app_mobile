@@ -10,7 +10,6 @@ import {
   FanwoodText_400Regular,
   FanwoodText_400Regular_Italic,
 } from "@expo-google-fonts/fanwood-text";
-import { useProducts } from "./Hooks/useProducts";
 
 import { H1, H3 } from "./Components/Text";
 import { Layout } from "./Components/Layout.native";
@@ -27,20 +26,9 @@ export default function App() {
     FanwoodText_400Regular_Italic,
   });
 
-  const productsData = useProducts(
-    "https://findandseek.herokuapp.com/api/v1/products/?page=1"
-  );
 
-  if (!fontsLoaded || productsData.status != "fetched") {
+  if (!fontsLoaded) {
     return <AppLoading />;
-  } else if (productsData.error) {
-    return (
-      <ThemeProvider theme={theme}>
-        <Layout>
-          <H1>Yikes! Something went wrong!</H1>
-        </Layout>
-      </ThemeProvider>
-    );
   } else {
     return (
       <ThemeProvider theme={theme}>
@@ -48,7 +36,7 @@ export default function App() {
           <H1>Find and Seek</H1>
           <H3>FIND THE PERFECT PIECE FROM ANYWHERE ON THE INTERNET</H3>
           <SearchBar />
-          <Products products={productsData} />
+          <Products />
         </Layout>
       </ThemeProvider>
     );

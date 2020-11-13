@@ -37,7 +37,9 @@ export const getStockDetails = (stock) => {
     return (
       <StockContainer key={color}>
         <MainText style={{ marginBottom: 0 }}>{color}</MainText>
-        <MainText style={{ justifyContent: "flex-end" }}>{quantity}</MainText>
+        {quantity && (
+          <MainText style={{ justifyContent: "flex-end" }}>{quantity}</MainText>
+        )}
       </StockContainer>
     );
   });
@@ -60,7 +62,7 @@ export const Product = ({ product = null }) => {
 
       <MainText style={{ fontSize: 20 }}>{name}</MainText>
 
-      {stock && <StockWrapper>{() => getStockDetails(stock)}</StockWrapper>}
+      {stock && <StockWrapper>{getStockDetails(stock)}</StockWrapper>}
 
       <MainText>{product_price}</MainText>
     </ProductContainer>
